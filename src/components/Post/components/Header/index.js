@@ -2,12 +2,18 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import ProfilePicture from '../../../ProfilePicture';
 import styles from './styles';
+import Icon from 'react-native-vector-icons/Entypo';
 
 const Header = ({imageUri, name}) => {
   return (
     <View style={styles.container}>
-      <ProfilePicture uri={imageUri} isDefault={false} />
-      <Text style={styles.name}>{name}</Text>
+      <View style={styles.left}>
+        <ProfilePicture uri={imageUri} isDefault={false} />
+        <Text style={styles.name}>{name}</Text>
+      </View>
+      <View style={styles.right}>
+        <Icon name={'dots-three-horizontal'} size={22} />
+      </View>
     </View>
   );
 };

@@ -3,6 +3,19 @@ const styles = StyleSheet.create({
   container: {
     margin: 5,
   },
+  iconsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 5,
+  },
+  left: {
+    flexDirection: 'row',
+    width: 115,
+    justifyContent: 'space-between',
+  },
+  bottom: {
+    // flexDirection: 'row',
+  },
   likesCount: {
     fontWeight: '700',
     margin: 3,
