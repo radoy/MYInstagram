@@ -1,16 +1,15 @@
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-
-import HomeScreen from './screens/HomeScreen';
+import 'react-native-gesture-handler';
+import {StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import Router from './router';
 
 const App: () => React$Node = () => {
   return (
-    <>
+    <NavigationContainer>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <HomeScreen />
-      </SafeAreaView>
-    </>
+      <Router />
+    </NavigationContainer>
   );
 };
 

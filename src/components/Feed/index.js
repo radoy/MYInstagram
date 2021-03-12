@@ -1,11 +1,11 @@
 import React from 'react';
 import {FlatList} from 'react-native';
-import styles from './styles';
 import Post from '../Post';
 import Stories from '../Stories';
 
 const data = [
   {
+    id: '1',
     user: {
       imageUri: 'https://randomuser.me/api/portraits/lego/1.jpg',
       name: 'Mr. Robot',
@@ -16,6 +16,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: '2',
     user: {
       imageUri: 'https://randomuser.me/api/portraits/lego/1.jpg',
       name: 'Mr. Robot',
@@ -26,6 +27,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: '3',
     user: {
       imageUri: 'https://randomuser.me/api/portraits/lego/1.jpg',
       name: 'Mr. Robot',
