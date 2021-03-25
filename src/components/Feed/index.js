@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 import Post from '../Post';
-import Stories from '../Stories';
+import UserStoriesPreview from '../UserStoriesPreview';
 
 const data = [
   {
@@ -47,7 +47,7 @@ const Feed = () => {
       showsHorizontalScrollIndicator={false}
       showsVerticalScrollIndicator={false}
       renderItem={({item}) => <RenderList key={item.id} item={item} />}
-      ListHeaderComponent={<Stories />}
+      ListHeaderComponent={<UserStoriesPreview />}
     />
   );
 };

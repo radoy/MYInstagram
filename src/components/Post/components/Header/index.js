@@ -8,7 +8,7 @@ const Header = ({imageUri, name}) => {
   return (
     <View style={styles.container}>
       <View style={styles.left}>
-        <ProfilePicture uri={imageUri} isDefault={false} />
+        <ProfilePicture uri={imageUri} />
         <Text style={styles.name}>{name}</Text>
       </View>
       <View style={styles.right}>
