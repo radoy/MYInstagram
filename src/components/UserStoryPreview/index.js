@@ -7,19 +7,17 @@ import styles from './styles';
 const UserStoryPreview = ({story}) => {
   const {
     id,
-    user: {imageUri, name},
+    user: {image, name},
   } = story;
   const navigation = useNavigation();
 
   const onPress = () => {
-    console.log(`${name} story pressed`);
-
     navigation.navigate('Story', {userId: id});
   };
 
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
-      <ProfilePicture uri={imageUri} />
+      <ProfilePicture uri={image} />
       <Text style={styles.name}>{name}</Text>
     </TouchableOpacity>
   );
