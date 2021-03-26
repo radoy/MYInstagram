@@ -24,8 +24,6 @@ const StoryScreen = ({route, navigation}) => {
   const [userStories, setUserStories] = useState(null);
   const [activeStoryIndex, setActiveStoryIndex] = useState(null);
 
-  console.log(userId);
-
   const handlePress = (e) => {
     const width = Dimensions.get('window').width / 2;
     const x = e.nativeEvent.locationX;
